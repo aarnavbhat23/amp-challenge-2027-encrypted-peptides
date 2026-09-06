@@ -1,0 +1,20 @@
+[project]
+name = "encrypted-amp"
+version = "1.0.0"
+description = "Conditional peptide LM trained on encrypted Peptipedia proteome fragments — AMP Challenge 2027"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = { text = "MIT" }
+authors = [{ name = "Aarnav Bhat" }]
+dependencies = [
+    "torch>=2.4,<3",
+    "numpy>=1.26,<3",
+    "levenshtein>=0.27.3",
+]
+
+[project.scripts]
+generate = "encrypted_amp.generate:main"
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
