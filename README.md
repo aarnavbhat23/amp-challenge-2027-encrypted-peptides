@@ -13,6 +13,15 @@ uv run generate
 Writes `generate/library.fasta` (50,000) and `generate/top.fasta` (100). Fixed default
 seed; two runs are byte-identical.
 
+| | |
+|---|---|
+| Corpus collision with the competition reference set | **0.435%**, against **91.7%** for GRAMPA |
+| Top-100 carrying real published MIC measurements | **100 / 100** |
+| Selection rule, held-out cluster-grouped folds | **11.4% → 55.4%** mean Success Rate |
+| Our own ranker on organizer-measured de novo peptides | **0.485 AUC — no measurable skill** |
+
+That last row is not a typo. See [A model result we would flag](#a-model-result-we-would-flag).
+
 ## Why this corpus
 
 The competition reference set (`data/antibacterial.fasta`, 39,448 sequences) is the
@@ -137,6 +146,15 @@ carried as censored, never as the number 64.
 
 No proprietary or non-public data is used. Full provenance, parsers, and QC gates are in
 the research repository accompanying this submission.
+
+## Related
+
+- **[AMP structure atlas](https://github.com/aarnavbhat23/amp-top100-atlas)** —
+  [live explorer](https://aarnavbhat23.github.io/amp-top100-atlas/) for Boltz-2.1
+  predicted peptide structures, with residue confidence and PAE matrices.
+- **[Wet-lab false-positive audit](https://github.com/aarnavbhat23/spear-wetlab-false-positive-audit)** —
+  the adversarial protocol used to check whether assay rows in this literature
+  carry sequence-specific evidence.
 
 ## Licence
 
