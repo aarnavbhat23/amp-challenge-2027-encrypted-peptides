@@ -13,6 +13,8 @@ uv run generate
 Writes `generate/library.fasta` (50,000) and `generate/top.fasta` (100). Fixed default
 seed; two runs are byte-identical.
 
+The public release contains the generator code, trained checkpoint, reference data, candidate table and generated FASTA outputs. The ranker, hemolysis and broader assay analyses described below come from the larger research pipeline; their `data/07_bench/` inputs are not included here. Running the generation command reproduces the generator artifacts, not every reported evaluation statistic.
+
 | | |
 |---|---|
 | Corpus collision with the competition reference set | **0.435%**, against **91.7%** for GRAMPA |
