@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "scope": "Historical revisions before and after a commit-metadata rewrite. Subsequent revision-map commits are outside this mapping.",
+  "commits": {
+    "b0fa27517f64095e7d5dac20d346168e7d8798d9": "5f022282c56d34bba71d56eae5fd1a094717bcec",
+    "909c48fda96eccd0b4416f00bf8d7a8f2552ee61": "844a2eea80878378763e4014132e0644a717a768",
+    "e63e947745050d1cdb54fc6a1fad426db0032171": "39ded844e5cebef7e2927c2f26eab5e58c96b12d",
+    "d1f9a4f44d2b562e615eb4ec92b0a13b6c18f665": "73b5fe224ef25cc7d48ffea1e72c1165c335e700"
+  }
+}
